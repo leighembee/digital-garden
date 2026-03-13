@@ -15,10 +15,10 @@ each transformation has a probability and is responsible for generating a differ
 
 |  |  | probability<br> factor | portion<br> generated |
 ---- | ---- | --- | --- |
-*f~1~* | _x~n~ = 0_<br> _y~n~ = 0.16 * y_ | 0.01 | stem |
-*f~2~* | _x~n~ = 0.85 * x + 0.04 * y_<br> _y~n~ = -0.04 * x + 0.85 * y + 1.6_ | 0.85 | smaller leaflets |
-*f~3~* | _x~n~ = 0.2 * x - 0.26 * y_<br> _y~n~ = 0.23 * x + 0.22 * y + 1.6_ | 0.07 | Largest <br>left-hand leaflet |
-*f~4~* | _x~n~ = -0.15 * x + 0.28 * y_<br> _y~n~ = 0.26 * x + 0.24 * y + 0.44_ | 0.07 | Largest <br>right-hand leaflet |
+*f<sub>1</sub>* | _x<sub>n</sub> = 0_<br> _y<sub>n</sub> = 0.16 * y_ | 0.01 | stem |
+*f<sub>2</sub>* | _x<sub>n</sub> = 0.85 * x + 0.04 * y_<br> _y<sub>n</sub> = -0.04 * x + 0.85 * y + 1.6_ | 0.85 | smaller leaflets |
+*f<sub>3</sub>* | _x<sub>n</sub> = 0.2 * x - 0.26 * y_<br> _y<sub>n</sub> = 0.23 * x + 0.22 * y + 1.6_ | 0.07 | Largest <br>left-hand leaflet |
+*f<sub>4</sub>* | _x<sub>n</sub> = -0.15 * x + 0.28 * y_<br> _y<sub>n</sub> = 0.26 * x + 0.24 * y + 0.44_ | 0.07 | Largest <br>right-hand leaflet |
 
 
 
