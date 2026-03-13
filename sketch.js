@@ -1,7 +1,59 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 600);
 }
 
 function draw() {
   background(220);
 }
+let x = 0;
+let y = 0;
+
+function setup() {
+  createCanvas(600, 600);
+  background(0);
+}
+
+
+function draw() {
+  let num = 0;
+  while (num < 300) {
+    drawPoint();
+    nextPoint();
+    num++
+  }
+}
+
+const drawPoint = () => {
+  stroke(255);
+  strokeWeight(2);
+  const pX = map(x, -2, 2, 0, width);
+  const pY = map(y, 0, 9, height, 0);
+  point(pX, pY);
+}
+
+const nextPoint = () => {
+  let nextX;
+  let nextY;
+  let randomNum = random()
+  /* Transformation Possibilities */
+  if (randomNum < 0.01) {
+    // 1% probability
+    nextX = 0;
+    nextY = 0.16 * y;
+  } else if (randomNum < 0.86) {
+    // 85% probability
+    nextX = 0.85 * x + 0.04 * y;
+    nextY = -0.04 * x + 0.85 * y + 1.6;
+  } else if (randomNum < 0.93) {
+    // 7% probability
+    nextX = 0.2 * x + -0.26 * y;
+    nextY = 0.23 * x + 0.22 * y + 1.6;
+  } else {
+    // 7% probability
+    nextX = -0.15 * x + 0.28 * y;
+    nextY = 0.26 * x + 0.24 * y + 0.44;
+  }
+  x = nextX;
+  y = nextY;
+}
+
