@@ -1,10 +1,3 @@
-function setup() {
-  createCanvas(800, 600);
-}
-
-function draw() {
-  background(220);
-}
 let x = 0;
 let y = 0;
 
