@@ -26,8 +26,8 @@ function draw() {
 const drawPoint = () => {
   stroke(255);
   strokeWeight(2);
-  const pX = map(x, -2, 2, 0, width);
-  const pY = map(y, 0, 9, height, 0);
+  const pX = map(x, -2.2, 2.7, 0, width);
+  const pY = map(y, 0, 9.99, height, 0);
   point(pX, pY);
 }
 
