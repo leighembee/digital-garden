@@ -1,6 +1,6 @@
-### Barnsley Fern
+## Barnsley Fern
 [barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
-- translate the barnsley fern algorithim into code
+- translate the barnsley fern algorithm into code
 
 _The first point drawn is at the origin `(x0 = 0, y0 = 0)`_
 
@@ -21,9 +21,20 @@ each transformation has a probability and is responsible for generating a differ
 *f<sub>4</sub>* | _x<sub>n</sub> = -0.15 * x + 0.28 * y_<br> _y<sub>n</sub> = 0.26 * x + 0.24 * y + 0.44_ | 0.07 | Largest <br>right-hand leaflet |
 
 
+## Fractal Trees
+_recursive definition_
 
+Branch: beginning and end point, a line that has 2 branches attached
+can be thought of like a factorial `n! = n * (n-1)`
 
 ```
-
-
+function branch () {
+  branch()
+}
 ```
+
+* further experiments *
+- keep track of what level of the tree we are at, draw levels at different stroke weights
+- what if the angle isn't the same for all branches, what if there is a different number of branches besides 2
+
+
